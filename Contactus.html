@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar a.active {
+                    background-color: #4CAF50;
+                }
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.responsive {
+            max-width: 100%;
+            height: auto;
+        }
+
+/* Our Team
+-------------------------------------------------------*/
+
+.our-team .team-row {
+  margin-left: -40px;
+  margin-right: -40px;
+}
+
+.our-team .team-wrap {
+  padding: 0 40px;
+}
+
+.our-team .container-fluid {
+  padding: 0 50px;
+}
+
+.team-img img {
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+  width: 100%;
+}
+
+.team-member,
+.team-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team-title {
+  margin: 30px 0 7px;
+}
+
+.overlay {
+  background-color: rgba(20,20,20,.7);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.team-details {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 5%;
+  overflow: hidden;
+  width: 100%;
+  z-index: 2;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.team-details p {
+  color: #fff;
+}
+
+.team-img:hover .team-details {
+  opacity: 1;
+  margin-top: -80px;
+}
+
+.team-img:hover .overlay {
+  opacity: 1;
+}
+
+.socials a {
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  background-color: transparent;
+}
+
+.socials i {
+  line-height: 37px;
+  color: #616161;
+  font-size: 14px;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.team-details .socials i {
+  color: #fff;
+}
+
+.socials a:hover i {
+  color: #fff;
+  background-color: #355c7d;
+}
+
+
+
+</style>
+</head>
+<body>
+<img src="bannertop.png" width="1834" height="365" class="responsive">
+<div class="navbar">
+  <a href="#home">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Events 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">WAVES</a>
+      <a href="#">RIPPLES</a>
+      <a href="#">FRESHERS DAY</a>
+      <a href="#">TEACHERS DAY</a>
+      <a href="#">FAREWELL</a>
+    </div>
+  </div> 
+  <a href="#home">HOBBEEE CLUB</a>
+  <div class="dropdown">
+    <button class="dropbtn">ALUMNI 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">NOTABLE</a>
+      <a href="#">REGISTRATION</a>
+       </div>
+  </div>
+   <div class="dropdown">
+    <button class="dropbtn">ACADEMICS 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">STUDY MATERIALS</a>
+      <a href="#">PLACEMENT GUIDE</a>
+       </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">IMPULSE 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">MAGAZINE</a>
+      <a href="#">ELECTRICAL FACTS</a>
+       </div>
+  </div>
+  <a href="Contactus.html">Contact Us</a>
+  <a class="active" href="developer.html">DEVELOPER</a>
+</div>
+<div class="container">
+
+  <div class="row heading">
+    <div class="col-md-6 col-md-offset-3">
+      <h2 class="text-center bottom-line">Meet Our Team</h2>
+      <p class="subheading text-center">Creative Nerds</p>
+    </div>
+  </div>
+
+  <div class="row team-row">
+
+    <div class="col-md-4 col-sm-6 team-wrap">
+      <div class="team-member text-center">
+        <div class="team-img">
+          <img src="praveen.jpg" alt="">
+          <div class="overlay">
+            <div class="team-details text-center">
+              <p>
+                PRESIDENT.
+              </p>
+              <div class="socials mt-20">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="team-title" style="color:purple;">PRAVEEN</h3>
+        <span style="color:purple;">PRESIDENT</span>
+      </div>
+    </div>
+    <!-- end team member -->
+
+    <div class="col-md-4 col-sm-6 team-wrap">
+      <div class="team-member text-center">
+        <div class="team-img">
+          <img src="aswitha.jpg" alt="">
+          <div class="overlay">
+            <div class="team-details text-center">
+              <p>
+                .
+              </p>
+              <div class="socials mt-20">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="#"><i class="fa fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="team-title" style="color:grey;">ASWITHA</h3>
+        <span style="color:grey;">Photographer</span>
+      </div>
+    </div>
+    <!-- end team member -->
+
+    <div class="col-md-4 col-sm-6 team-wrap">
+      <div class="team-member last text-center">
+        <div class="team-img">
+          <img src="balaji.jpg" alt="">
+          <div class="overlay">
+            <div class="team-details text-center">
+              <p>
+                Our web design team will spend time with our digital marketing team.
+              </p>
+              <div class="socials mt-20">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="#"><i class="fa fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h6 class="team-title">Michael Cartney</h6>
+        <span>Designer</span>
+      </div>
+    </div>
+    <!-- end team member -->
+
+  </div>
+</div>
+
+
+
+
+</body>
+</html>
